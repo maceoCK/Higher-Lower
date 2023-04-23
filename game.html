@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Water Use Higher or Lower Game</title>
+  <meta charset="utf-8">
+  <title>Water Use Higher or Lower Game</title>
 </head>
 <body>
-    <h1>Water Use Higher or Lower Game</h1>
-    <p>Your score: {{ score }}</p>
-    <p>The food is: {{ food }}</p>
-    <p>The water usage is: {{ water }} liters/kg</p>
-    <p>Is the water usage of the next food higher or lower?</p>
-    <form action="{{ url_for('play') }}" method="POST">
-        <input type="radio" name="answer" value="higher"> Higher<br>
-        <input type="radio" name="answer" value="lower"> Lower<br>
-        <br>
-        <input type="hidden" name="compare" value="{{ compare }}">
-        <input type="hidden" name="score" value="{{ score }}">
-        <input type="submit" value="Submit">
-    </form>
+  <h1>Water Use Higher or Lower Game</h1>
+  <p>Click the button to play</p>
+  <button onclick="location.href='script.js'">Play</button>
+  <script src="script.js"></script>
 </body>
 </html>
